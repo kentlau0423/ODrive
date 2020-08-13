@@ -2,9 +2,6 @@
 #define __INTERFACE_USB_HPP
 
 #ifdef __cplusplus
-#include "fibre/protocol.hpp"
-extern StreamSink* usb_stream_output_ptr;
-
 extern "C" {
 #endif
 

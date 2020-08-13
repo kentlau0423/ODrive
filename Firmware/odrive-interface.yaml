@@ -115,6 +115,7 @@ interfaces:
             type: bool
             doc: Changing this requires a reboot.
           enable_ascii_protocol_on_usb: bool
+          enable_ascii_protocol_on_uart: bool
           max_regen_current: float32
           brake_resistance:
             type: float32

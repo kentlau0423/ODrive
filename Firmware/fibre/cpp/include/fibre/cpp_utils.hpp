@@ -82,7 +82,7 @@ public:
 #include <tuple>
 #include <functional>
 #include <unordered_map>
-#include <ostream>
+//#include <ostream>
 
 /* Backport features from C++14 and C++17 ------------------------------------*/
 
@@ -786,13 +786,13 @@ using sstring_builder_t = typename sstring_builder<LENGTH, CHARS...>::type;
  */
 #define MAKE_SSTRING(literal)  sstring_builder_t<sizeof(literal)-1, MACRO_GET_64(literal, 0)>
 
-namespace std {
+/*namespace std {
 template<char ... CHARS>
 static std::ostream& operator<<(std::ostream& stream, const sstring<CHARS...>& val) {
     stream << val.chars;
     return stream;
 }
-}
+}*/
 
 template<typename TDelimiter, typename ... TStr>
 struct join_sstring_impl;

@@ -121,7 +121,7 @@ As an example, we'll configure GPIO4 to control the angle of axis 0. We want the
     ```
     In [1]: odrv0.config.gpio4_pwm_mapping.min = -2
     In [2]: odrv0.config.gpio4_pwm_mapping.max = 2
-    In [3]: odrv0.config.gpio4_pwm_mapping.endpoint = odrv0.axis0.controller._remote_attributes['input_pos']
+    In [3]: odrv0.config.gpio4_pwm_mapping.endpoint = odrv0.axis0.controller._input_pos_property
     ```
    Note: you can disable the input by setting `odrv0.config.gpio4_pwm_mapping.endpoint = None`
 4. Save the configuration and reboot
